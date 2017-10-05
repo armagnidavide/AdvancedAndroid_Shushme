@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.shushme">
+    //add metadata with API-KEY
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDgcpXcC61b0LzGGRN-J7ZKigSwmR93JkY"
+        />
 
     <application
         android:allowBackup="true"
@@ -21,5 +26,8 @@
             android:exported="false"/>
 
     </application>
+    // Add uses-permission tags for INTERNET and ACCESS_FINE_LOCATION
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
